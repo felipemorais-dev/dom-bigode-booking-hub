@@ -28,3 +28,7 @@ use the editor.
   own key and store it in Secrets.
 - **Secrets.** Lovable manages them. Do not put secret values in the repo.
 <!-- LOVABLE:END -->
+
+## Project rules
+- Business data (services, prices, hours, address, WhatsApp link builders) lives in `src/lib/barbershop.ts`; components read from it so prices and contact stay in one place, covered by `src/lib/barbershop.test.ts`.
+- The landing page is a single scrolling page at `/` with in-page anchors, as the user requested one landing page.
